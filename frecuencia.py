@@ -1,25 +1,23 @@
 from datos import datosX
-    
+from Colores import Colores    
 def crear_frecuencia():  
     frecuencia = []
     frecuencia_relativa = []
     n = 0 
     frecuencia.append(n)
-
-    F1 = int(input('INGRESA EL PRIMER DATO A CARGAR (NO INGRESES 0 (CERO)): '))
-    print('SELECCIONA 0 (cero) PARA TERMINAR DE CARGAR LOS DATOS')
-    while F1 != 0 :
+    print(f'{Colores.MAGENTA}INGRESA EL PRIMER DATO A CARGAR (NO INGRESES 0 (CERO)): \n')
+    print(f'{Colores.CYAN}SELECCIONA 0 (cero) PARA TERMINAR DE CARGAR LOS DATOS\n')
+    F1 = int(input())
+    indice = len(datosX) -1 
+    while  len(frecuencia)< indice :
         frecuencia.append(F1)
-        F1 = int(input('Ingrese el siguiente dato: '))
+        F1 = int(input(f'{Colores.VERDE}Ingrese el siguiente dato: '))
         
             
     frecuencia.append(n) 
     print(frecuencia)
-
-    if len(frecuencia) == len(datosX) :
-        print('las listas estan completas')
-    else:
-        print('Las listas estan INCOMPLETAS por favor volve a ingresar los datos')
+    print("\n")
+  
     
     suma = 0 
     for f in frecuencia :

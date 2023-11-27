@@ -1,10 +1,10 @@
-
+from Colores import Colores
 # N es el primer numero de la lista 
-N = int(input("ingrese el numero de inicio: "))
+N = int(input(f"{Colores.AZUL}ingrese el numero de inicio: \n"))
 # M es el limite de la lista 
-M = int(input("ingrese el numero Limite: "))
+M = int(input(f"{Colores.CYAN}ingrese el numero Limite: \n"))
 # I es la progresion aritmetica, cada cuanto ira progresando de nunero en numero 
-I = int(input("ingrese el incremento: "))
+I = int(input(f"{Colores.MAGENTA}ingrese el incremento: \n"))
 P = N 
 
 # lista de numeros vacia 
